@@ -12,7 +12,8 @@
 		64077A8E21D327BC00DCD6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64077A8C21D327BC00DCD6A4 /* Main.storyboard */; };
 		64077A9021D327BD00DCD6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64077A8F21D327BD00DCD6A4 /* Assets.xcassets */; };
 		64077A9321D327BD00DCD6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64077A9121D327BD00DCD6A4 /* LaunchScreen.storyboard */; };
-		64077A9B21D327E200DCD6A4 /* ZXAlertAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64077A9A21D327E200DCD6A4 /* ZXAlertAble.swift */; };
+		64077A9B21D327E200DCD6A4 /* RVAlertAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64077A9A21D327E200DCD6A4 /* RVAlertAble.swift */; };
+		64077A9E21D32C6700DCD6A4 /* RVAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64077A9D21D32C6700DCD6A4 /* RVAlertView.swift */; };
 		6736ABADF0BEA11B721F5B4F /* libPods-RVCustomAlertView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB22098B2DD9E7F9FB5958AA /* libPods-RVCustomAlertView.a */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +26,8 @@
 		64077A8F21D327BD00DCD6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64077A9221D327BD00DCD6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64077A9421D327BD00DCD6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64077A9A21D327E200DCD6A4 /* ZXAlertAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXAlertAble.swift; sourceTree = "<group>"; };
+		64077A9A21D327E200DCD6A4 /* RVAlertAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVAlertAble.swift; sourceTree = "<group>"; };
+		64077A9D21D32C6700DCD6A4 /* RVAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVAlertView.swift; sourceTree = "<group>"; };
 		DDC5C62CD41EFE86E13C0C73 /* Pods-RVCustomAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCustomAlertView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RVCustomAlertView/Pods-RVCustomAlertView.release.xcconfig"; sourceTree = "<group>"; };
 		FB22098B2DD9E7F9FB5958AA /* libPods-RVCustomAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RVCustomAlertView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -54,6 +56,7 @@
 		64077A7C21D327BC00DCD6A4 = {
 			isa = PBXGroup;
 			children = (
+				64077A9C21D32BE100DCD6A4 /* RVAlertAble */,
 				64077A8721D327BC00DCD6A4 /* RVCustomAlertView */,
 				64077A8621D327BC00DCD6A4 /* Products */,
 				300DD51E6FF3CCEE49BDBDCA /* Pods */,
@@ -72,15 +75,23 @@
 		64077A8721D327BC00DCD6A4 /* RVCustomAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				64077A9A21D327E200DCD6A4 /* ZXAlertAble.swift */,
 				64077A8821D327BC00DCD6A4 /* AppDelegate.swift */,
 				64077A8A21D327BC00DCD6A4 /* ViewController.swift */,
+				64077A9D21D32C6700DCD6A4 /* RVAlertView.swift */,
 				64077A8C21D327BC00DCD6A4 /* Main.storyboard */,
 				64077A8F21D327BD00DCD6A4 /* Assets.xcassets */,
 				64077A9121D327BD00DCD6A4 /* LaunchScreen.storyboard */,
 				64077A9421D327BD00DCD6A4 /* Info.plist */,
 			);
 			path = RVCustomAlertView;
+			sourceTree = "<group>";
+		};
+		64077A9C21D32BE100DCD6A4 /* RVAlertAble */ = {
+			isa = PBXGroup;
+			children = (
+				64077A9A21D327E200DCD6A4 /* RVAlertAble.swift */,
+			);
+			path = RVAlertAble;
 			sourceTree = "<group>";
 		};
 		71E4DD45980282C7B9E9F500 /* Frameworks */ = {
@@ -184,9 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64077A9B21D327E200DCD6A4 /* ZXAlertAble.swift in Sources */,
+				64077A9B21D327E200DCD6A4 /* RVAlertAble.swift in Sources */,
 				64077A8B21D327BC00DCD6A4 /* ViewController.swift in Sources */,
 				64077A8921D327BC00DCD6A4 /* AppDelegate.swift in Sources */,
+				64077A9E21D32C6700DCD6A4 /* RVAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

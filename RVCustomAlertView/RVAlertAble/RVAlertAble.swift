@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 import SnapKit
-protocol ZXAlertAble where Self: UIView {
+protocol RVAlertAble where Self: UIView {
     ///背板蒙层
     var backView: UIView {set get}
     ///配置弹窗布局
     func configSubviews()
 }
 
-extension ZXAlertAble {
+extension RVAlertAble {
 
     func show(animated: Bool = true) {
         if let keyWindow = UIApplication.shared.keyWindow{
