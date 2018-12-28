@@ -29,6 +29,7 @@ class RVAlertView: UIView,RVAlertAble {
         layer.masksToBounds = true
         self.setupSubviews()
         self.snapSubviews()
+        
     }
     
     func snapSubviews() {
