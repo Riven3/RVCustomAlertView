@@ -13,10 +13,16 @@ class RVAlertView: UIView,RVAlertAble {
     
     lazy var cancelButton: UIButton = {
         let cancel = UIButton()
-        cancel.setTitle("RVALERT", for: UIControlState.normal)
+        cancel.setTitle("Close", for: UIControlState.normal)
         cancel.setTitleColor(.orange, for: UIControlState.normal)
         cancel.addTarget(self, action: #selector(dissMiss), for: UIControlEvents.touchUpInside)
         return cancel
+    }()
+    
+    lazy var imageView: UIImageView = {
+        let image  = UIImageView()
+        image.image = UIImage.init(named:"lebron")
+        return image
     }()
     
     @objc func dissMiss(){
@@ -40,14 +46,21 @@ class RVAlertView: UIView,RVAlertAble {
             make.right.equalToSuperview().offset(-30)
         }
         
+        imageView.snp.makeConstraints { (make) in
+            make.height.equalTo(420)
+            make.edges.equalTo(UIEdgeInsetsMake(30, 30, 80, 30))
+        }
+        
         cancelButton.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.edges.equalTo(UIEdgeInsetsMake(20, 20, 20, 20))
+            make.centerX.equalToSuperview()
+            
+            make.bottom.equalToSuperview().offset(-20)
         }
     }
     
     func setupSubviews(){
         addSubview(cancelButton)
+        addSubview(imageView)
     }
     
 }

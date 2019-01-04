@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         //g4()
         //g5()
         //g6()
-        g7()
+        //g7()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
